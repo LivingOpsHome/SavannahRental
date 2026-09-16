@@ -1,0 +1,15 @@
+node_modules/
+.next/
+.env*
+!.env.example
+.data/
+test-results/
+playwright-report/
+contact-sheet.jpg
+*-preview.png
+*-small.jpg
+contact-sheet-small.jpg
+
+.env.local
+.vercel/
+*.tsbuildinfo

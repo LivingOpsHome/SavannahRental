@@ -1,0 +1,2 @@
+import 'server-only';
+export function siteUrl(){const value=process.env.NEXT_PUBLIC_SITE_URL|| (process.env.NODE_ENV==='production'? '':'http://localhost:3000');if(!value)throw Error('NEXT_PUBLIC_SITE_URL is required');const url=new URL(value);if(url.username||url.password||url.search||url.hash||url.pathname!=='/')throw Error('Site URL must be an origin');if(process.env.NODE_ENV==='production'&&(url.protocol!=='https:'||['localhost','127.0.0.1','[::1]'].includes(url.hostname)))throw Error('Production site URL must use public HTTPS');return url.origin}

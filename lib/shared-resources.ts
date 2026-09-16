@@ -1,0 +1,5 @@
+export type SharedResource={id:string;file:string;filename:string;mime:string;format:string;title:[string,string];description:[string,string]};
+export const initialResources:SharedResource[]=[
+{id:'5252-projection',file:'5252-projection.xlsx',filename:'5252-DeepSprings-Projection.xlsx',mime:'application/vnd.openxmlformats-officedocument.spreadsheetml.sheet',format:'Excel · XLSX',title:['5252 DeepSprings financial projection','5252 DeepSprings 收支测算'],description:['Explore the original projection workbook as a reference for rental planning and financial assumptions.','查看原始房产收支测算工作簿，参考出租规划与财务假设的分析方式。']},
+{id:'landlord-setup-checklist',file:'landlord-setup-checklist.docx',filename:'PadSplit 房东装修与采购清单.docx',mime:'application/vnd.openxmlformats-officedocument.wordprocessingml.document',format:'Word · DOCX',title:['Landlord renovation & purchasing checklist','房东装修与采购清单'],description:['Use the original Chinese PadSplit checklist to plan property preparation, renovation, and purchasing.','参考中文版 PadSplit 房东装修与采购清单，梳理房屋筹备、装修与采购事项。']}
+];
